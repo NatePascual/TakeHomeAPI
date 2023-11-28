@@ -9,7 +9,7 @@ namespace TakeHome.ConsoleApp
     class Program
     {
         private static HttpClient httpClient = new HttpClient();
-        private const string apiBaseUrl = "https://localhost:7178/home/";
+        private const string apiBaseUrl = "https://localhost:7178/";
 
         static async Task Main()
         {
@@ -60,7 +60,7 @@ namespace TakeHome.ConsoleApp
 
         static async Task Greetings()
         {
-            var response = await httpClient.GetStringAsync(apiBaseUrl);
+            var response = await httpClient.GetStringAsync(apiBaseUrl + "home/greet/");
             Console.WriteLine(response);
         }
 
@@ -68,7 +68,7 @@ namespace TakeHome.ConsoleApp
         {
             Console.WriteLine("All People:");
 
-            var response = await httpClient.GetStringAsync(apiBaseUrl + "people");
+            var response = await httpClient.GetStringAsync(apiBaseUrl + "people/getall/");
             var people = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Person>>(response);
 
             foreach (var person in people)
@@ -83,7 +83,7 @@ namespace TakeHome.ConsoleApp
             int id;
             if (int.TryParse(Console.ReadLine(), out id))
             {
-                var response = await httpClient.GetStringAsync(apiBaseUrl + $"person/{id}");
+                var response = await httpClient.GetStringAsync(apiBaseUrl + $"people/getperson/{id}");
                 var person = Newtonsoft.Json.JsonConvert.DeserializeObject<Person>(response);
 
                 if (person != null)

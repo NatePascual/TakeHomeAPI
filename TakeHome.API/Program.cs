@@ -29,12 +29,16 @@ namespace TakeHome.API
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=People}/{action=people}");
-            });
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //    name: "default",
+            //    pattern: "{controller=People}/{action=people}");
+            //});
+
+            app.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=greet}/{id?}");
             app.Run();
         }
     }
