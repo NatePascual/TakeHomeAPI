@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeHome.API", "TakeHome.API\TakeHome.API.csproj", "{487635D1-226D-4326-AC86-0D46FADAEB3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeHome.ConsoleApp", "TakeHome.Console\TakeHome.ConsoleApp.csproj", "{5555FE8E-51D0-42FD-8263-10F3D015A726}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{487635D1-226D-4326-AC86-0D46FADAEB3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487635D1-226D-4326-AC86-0D46FADAEB3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487635D1-226D-4326-AC86-0D46FADAEB3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487635D1-226D-4326-AC86-0D46FADAEB3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5555FE8E-51D0-42FD-8263-10F3D015A726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5555FE8E-51D0-42FD-8263-10F3D015A726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5555FE8E-51D0-42FD-8263-10F3D015A726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5555FE8E-51D0-42FD-8263-10F3D015A726}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F04D1DC-9C72-46D7-BB24-A5B18A3FC763}
+	EndGlobalSection
+EndGlobal
